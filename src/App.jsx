@@ -3,7 +3,7 @@ import Input from "./components/Input";
 import Header from "./components/Header";
 import { fromUSD, fromEUR, fromGBP, fromBRL } from "./js/calculateFunctions";
 
-function App() {
+export default function App() {
   const [output, setOutput] = useState("");
   const [selectedInput, setSelectedInput] = useState("dollar");
   const [selectedOutput, setSelectedOutput] = useState("real");
@@ -105,5 +105,3 @@ function App() {
     </>
   );
 }
-
-export default App;
